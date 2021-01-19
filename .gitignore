@@ -1,0 +1,53 @@
+# file types
+*.bak
+*.so
+*.*~
+*.swp
+*.log
+*.gz
+*.jar
+.DS_Store
+.env*
+
+# directories
+**/bin/*
+**/tmp/*
+
+# editor stuff
+**/.idea/
+**/.vscode/
+*.iml
+*.ipr
+*.iws
+.project
+.settings
+.cassandra*
+
+# java stuff
+**/target/
+**/build/
+**/.gradle
+**/out/
+
+# python stuff
+**/.pytest_cache/
+*.pyc
+venv/
+**/__pycache__/
+instance/
+**/.benchmarks/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+celerybeat-schedule
+
+# nodejs stuff
+**/node_modules/
+
+# sqlite files
+**/*.sqlite3*
+
+# project files
+root/ssh/id_rsa
