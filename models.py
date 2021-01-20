@@ -199,7 +199,7 @@ def validate_file(user, entitlement, file_path):
     if eff_dat.size() <> 1:
         bulk.errors.append("different debit date in transaction records")
 
-
+# field validation utils
 def is_detail_field_unique(bulk, expr):
     val_lst, val_set = vals_for_field(bulk, expr) # a set
     return val_lst.size() == val_set.size()
@@ -217,6 +217,22 @@ def vals_for_field(bulk, expr):
         val_set.add(val)
         val_lst.add(val)
     return val_lst, val_set
+
+# invooke apis
+def has_subscription(user.company, bulk.bulk_type):
+    pass
+
+def has_entitlement(user, bulk.bulk_type):
+    pass
+
+def is_debit_account_valid(debit_account):
+    pass
+
+def has_entitlement(user, debit_account):
+    pass
+
+def is_debit_account_eligible(debit_account):
+    pass
 
 if __name__ == "__main__":
     bulk1 = generateBulk1();
